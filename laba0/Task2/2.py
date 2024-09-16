@@ -1,5 +1,5 @@
-n = int(open('inp_fib.txt').readline())
-f = open("out_fib.txt", 'w')
+n = int(open('input.txt').readline())
+f = open("output.txt", 'w')
 
 if 0 <= n <= 45:
   a,b = 0,1

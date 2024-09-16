@@ -1,8 +1,8 @@
 import time
 # скорость задания 2
 t_start = time.perf_counter()
-n = int(open('inp_fib.txt').readline())
-f = open("out_fib.txt", 'w')
+n = int(open('input.txt').readline())
+f = open("output.txt", 'w')
 
 if 0 <= n <= 45:
   a,b = 0,1
@@ -15,8 +15,8 @@ print("Время 2 задания %s секунд" % (time.perf_counter() - t_s
 # скорость задания 3
 t_start = time.perf_counter()
 
-n = int(open('inp_fib1.txt').readline())
-f = open("out_fib1.txt", 'w')
+n = int(open('input1.txt').readline())
+f = open("output1.txt", 'w')
 
 if 0 <= n <= 10**7:
   a,b = 0,1
