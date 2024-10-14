@@ -3,17 +3,17 @@ import tracemalloc
 tracemalloc.start()
 t_start = time.perf_counter()
 
-f = open('./input.txt')
+f = open('task7/textf/input.txt')
 n = int(f.readline())
-arr = list(map(int, f.readline().split()))
+M = list(map(float, f.readline().split()))
 
-for i in range(n):
-  for j in range(0, n-i-1):
-    if arr[j] > arr[j+1]:
-      arr[j], arr[j+1] = arr[j+1], arr[j]
+arr_ind = [[M[x], x + 1] for x in range(len(M))]
+arr_ind.sort()
 
-f2 = open("output.txt", 'w')
-f2.write((" ").join(list(map(str, arr))))
+res = [arr_ind[0][1], arr_ind[len(M) // 2][1] ,arr_ind[-1][1]]
+
+f2 = open("task7/textf/output.txt", 'w')
+f2.write((" ").join(list(map(str, res))))
 f2.close()
 
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))

@@ -3,7 +3,7 @@ import tracemalloc
 tracemalloc.start()
 t_start = time.perf_counter()
 
-f = open('./input.txt')
+f = open('task3/textf/input.txt')
 n = int(f.readline())
 arr = list(map(int, f.readline().split()))
 
@@ -17,7 +17,7 @@ for i in range(1, n):
         swap(j, j+1, arr)
         j -= 1
     
-f2 = open("output.txt", 'w')
+f2 = open("task3/textf/output.txt", 'w')
 f2.write((" ").join(list(map(str, arr))))
 f2.close()
 
