@@ -8,3 +8,9 @@
 
 - Ограничение по времени. 2сек.
 - Ограничение по памяти. 256 мб.
+
+## Запуск кода
+
+- `git clone https://github.com/Brondee/alg-labs.git`
+- `cd 'путь до папки lab1'`
+- `python3 task1/src/sort.py`
