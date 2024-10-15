@@ -13,4 +13,4 @@
 
 - `git clone https://github.com/Brondee/alg-labs.git`
 - `cd 'путь до папки lab1'`
-- `python3 task7/src/sort.py`
+- `python3 task10/src/sort.py`
