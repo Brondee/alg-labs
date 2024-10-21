@@ -19,6 +19,5 @@ inds = find_ind(a, b, n)
 utils.write_file("task4/textf/output.txt", inds)
 
 print('Тест примера')
-print('Время работы: %s секунд' % (time.perf_counter() - t_start))
-print("Память:", tracemalloc.get_traced_memory()[1] / (1024 ** 2), "МБ")
+utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 tracemalloc.stop()

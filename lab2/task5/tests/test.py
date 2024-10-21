@@ -17,6 +17,5 @@ res = has_majority(a, n)
 utils.write_file("task5/textf/output.txt", [res])
 
 print('Тест примера')
-print('Время работы: %s секунд' % (time.perf_counter() - t_start))
-print("Память:", tracemalloc.get_traced_memory()[1] / (1024 ** 2), "МБ")
+utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 tracemalloc.stop()

@@ -18,8 +18,7 @@ res = max_subarray(arr_in)
 utils.write_file("task7/textf/output.txt", [res])
 
 print('Тест примера')
-print('Время работы: %s секунд' % (time.perf_counter() - t_start))
-print("Память:", tracemalloc.get_traced_memory()[1] / (1024 ** 2), "МБ")
+utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 tracemalloc.stop()
 
 # проверка по времени и памяти для худшего, среднего и лучшего случаев dwadwadaw
@@ -35,8 +34,7 @@ for i, arr in enumerate(arrays):
 
   res = max_subarray(arr)
   print(arr_names[i])
-  print('Время работы: %s секунд' % (time.perf_counter() - t_start))
-  print("Память:", tracemalloc.get_traced_memory()[1] / (1024 ** 2), "МБ")
+  utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 
   tracemalloc.stop()
 
