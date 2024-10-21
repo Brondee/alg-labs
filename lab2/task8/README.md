@@ -16,4 +16,4 @@
 
 ## Запуск тестов
 
-- `PYTHONPATH=. python3 task8/tests/test.py `
+- `PYTHONPATH=. python3 task8/tests/test.py`

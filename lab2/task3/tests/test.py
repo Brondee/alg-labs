@@ -1,6 +1,7 @@
 import time
 import tracemalloc
-from task3.src.task import merge_sort 
+from task3.src.task import merge_sort
+import utils
 
 # проверка по времени и памяти для примера
 tracemalloc.start()
@@ -13,9 +14,8 @@ f.close()
 
 inversion_count = merge_sort(arr_in, 0, len(arr_in) - 1, 0)
 
-f2 = open("task3/textf/output.txt", 'w')
-f2.write(str(inversion_count))
-f2.close()
+utils.write_file("task3/textf/output.txt", [inversion_count])
+
 
 print('Тест примера')
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))

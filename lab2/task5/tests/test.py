@@ -1,6 +1,7 @@
 import time
 import tracemalloc
 from task5.src.task import has_majority 
+import utils
 
 # проверка по времени и памяти для примера
 tracemalloc.start()
@@ -13,9 +14,7 @@ f.close()
 
 res = has_majority(a, n)
 
-f2 = open("task5/textf/output.txt", 'w')
-f2.write(str(res))
-f2.close()
+utils.write_file("task5/textf/output.txt", [res])
 
 print('Тест примера')
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))

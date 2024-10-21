@@ -2,6 +2,7 @@ import time
 import tracemalloc
 import random
 from task7.src.task import max_subarray 
+import utils
 
 # проверка по времени и памяти для примера
 tracemalloc.start()
@@ -14,9 +15,7 @@ f.close()
 
 res = max_subarray(arr_in)
 
-f2 = open("task7/textf/output.txt", 'w')
-f2.write((" ").join(list(map(str, res))))
-f2.close()
+utils.write_file("task7/textf/output.txt", [res])
 
 print('Тест примера')
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))

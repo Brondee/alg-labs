@@ -1,6 +1,7 @@
 import time
 import tracemalloc
 from task8.src.task import multiply_polynomials 
+import utils
 
 # проверка по времени и памяти для примера
 tracemalloc.start()
@@ -14,9 +15,7 @@ f.close()
 
 inversion_count = multiply_polynomials(a, b, n)
 
-f2 = open("task8/textf/output.txt", 'w')
-f2.write((" ").join(list(map(str, inversion_count))))
-f2.close()
+utils.write_file("task8/textf/output.txt", [inversion_count])
 
 print('Тест примера')
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))

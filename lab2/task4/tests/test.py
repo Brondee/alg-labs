@@ -1,6 +1,7 @@
 import time
 import tracemalloc
 from task4.src.task import find_ind 
+import utils
 
 # проверка по времени и памяти для примера
 tracemalloc.start()
@@ -15,9 +16,7 @@ f.close()
 
 inds = find_ind(a, b, n)
 
-f2 = open("task4/textf/output.txt", 'w')
-f2.write((" ").join(list(map(str, inds))))
-f2.close()
+utils.write_file("task4/textf/output.txt", inds)
 
 print('Тест примера')
 print('Время работы: %s секунд' % (time.perf_counter() - t_start))
