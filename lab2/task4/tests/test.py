@@ -6,15 +6,10 @@ import utils
 # проверка по времени и памяти для примера
 tracemalloc.start()
 t_start = time.perf_counter()
-  
-f = open('task4/textf/input.txt')
-n = int(f.readline())
-a = list(map(int, f.readline().split()))
-k = int(f.readline())
-b = list(map(int, f.readline().split()))
-f.close()
 
-inds = find_ind(a, b, n)
+data = utils.read_data('task4/textf/input.txt')
+
+inds = find_ind(data[1], data[3], data[0])
 
 utils.write_file("task4/textf/output.txt", inds)
 

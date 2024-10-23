@@ -7,12 +7,9 @@ import utils
 tracemalloc.start()
 t_start = time.perf_counter()
   
-f = open('task5/textf/input.txt')
-n = int(f.readline())
-a = list(map(int, f.readline().split()))
-f.close()
+data = utils.read_data('task5/textf/input.txt')
 
-res = has_majority(a, n)
+res = has_majority(data[1], data[0])
 
 utils.write_file("task5/textf/output.txt", [res])
 

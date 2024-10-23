@@ -7,13 +7,10 @@ import utils
 # проверка по времени и памяти для примера
 tracemalloc.start()
 t_start = time.perf_counter()
-  
-f = open('task7/textf/input.txt')
-n = int(f.readline())
-arr_in = list(map(int, f.readline().split()))
-f.close()
 
-res = max_subarray(arr_in)
+data = utils.read_data('task7/textf/input.txt')
+
+res = max_subarray(data[1])
 
 utils.write_file("task7/textf/output.txt", [res])
 
@@ -21,7 +18,7 @@ print('Тест примера')
 utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 tracemalloc.stop()
 
-# проверка по времени и памяти для худшего, среднего и лучшего случаев dwadwadaw
+# проверка по времени и памяти для худшего, среднего и лучшего случаев
 array_worst = sorted([random.randint(-1000, 1000) for _ in range(10000)], reverse=True)
 array_middle = [random.randint(-1000, 1000) for _ in range(10000)]                      
 array_best = sorted([random.randint(-1000, 1000) for _ in range(10000)])                

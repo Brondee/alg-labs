@@ -8,12 +8,14 @@ import utils
 tracemalloc.start()
 t_start = time.perf_counter()
   
-f = open('task1/textf/input.txt')
-n = int(f.readline())
-arr_in = list(map(int, f.readline().split()))
-f.close()
+# f = open('task1/textf/input.txt')
+# n = int(f.readline())
+# arr_in = list(map(int, f.readline().split()))
+# f.close()
 
-arr_sort = merge_sort(arr_in, 0, len(arr_in) - 1)
+data = utils.read_data('task1/textf/input.txt')
+
+arr_sort = merge_sort(data[1], 0, len(data[1]) - 1)
 
 utils.write_file("task1/textf/output.txt", arr_sort)
 

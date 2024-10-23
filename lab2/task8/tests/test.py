@@ -6,14 +6,10 @@ import utils
 # проверка по времени и памяти для примера
 tracemalloc.start()
 t_start = time.perf_counter()
-  
-f = open('task8/textf/input.txt')
-n = int(f.readline())
-a = list(map(int, f.readline().split()))
-b = list(map(int, f.readline().split()))
-f.close()
 
-inversion_count = multiply_polynomials(a, b, n)
+data = utils.read_data('task8/textf/input.txt')
+
+inversion_count = multiply_polynomials(data[1], data[2], data[0])
 
 utils.write_file("task8/textf/output.txt", [inversion_count])
 

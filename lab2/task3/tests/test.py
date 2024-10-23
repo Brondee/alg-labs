@@ -7,12 +7,9 @@ import utils
 tracemalloc.start()
 t_start = time.perf_counter()
   
-f = open('task3/textf/input.txt')
-n = int(f.readline())
-arr_in = list(map(int, f.readline().split()))
-f.close()
+data = utils.read_data('task3/textf/input.txt')
 
-inversion_count = merge_sort(arr_in, 0, len(arr_in) - 1, 0)
+inversion_count = merge_sort(data[1], 0, len(data[1]) - 1, 0)
 
 utils.write_file("task3/textf/output.txt", [inversion_count])
 
