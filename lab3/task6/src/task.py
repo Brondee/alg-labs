@@ -10,6 +10,5 @@ def sum_of_tenth(A, B):
 
     return sum_of_tenth
 
-r1 = [7,1, 4, 9]
-r2 = [2, 7, 8, 11]
-print(sum_of_tenth(r1, r2))
+if __name__ == '__main__':
+  sum_of_tenth()

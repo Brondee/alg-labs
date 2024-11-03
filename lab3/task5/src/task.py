@@ -7,3 +7,6 @@ def hirsh_index(arr):
         else:
             break
     return h
+
+if __name__ == '__main__':
+  hirsh_index()

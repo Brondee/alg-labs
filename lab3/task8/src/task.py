@@ -7,3 +7,6 @@ def k_closest_points(arr, k):
     points.append([dist, [x,y]])
   points_sort = randomized_quicksort(points, 0, len(points) - 1)
   return [x[1] for x in points_sort[0:k]]
+
+if __name__ == '__main__':
+  k_closest_points()

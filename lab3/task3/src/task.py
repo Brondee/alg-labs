@@ -7,3 +7,6 @@ def pugalo_sort(A, n, k):
                 A[i], A[i + k] = A[i + k], A[i]
                 sorted_flag = False 
     return "ДА" if A == sorted(A) else "НЕТ"
+
+if __name__ == '__main__':
+  pugalo_sort()

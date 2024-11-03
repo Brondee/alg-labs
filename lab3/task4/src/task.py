@@ -26,3 +26,6 @@ def count_interval(data):
       result[pos] = active
 
   return [result[point] for point in points]
+
+if __name__ == '__main__':
+  count_interval()
