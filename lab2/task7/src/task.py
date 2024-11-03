@@ -17,3 +17,6 @@ def max_subarray(arr):
           st = temp_st
           end = i
   return arr[st:end + 1]
+
+if __name__ == '__main__':
+  max_subarray()

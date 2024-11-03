@@ -40,3 +40,6 @@ def merge_sort(A,p,r, inversion_count):
       inversion_count = merge(A, p, q, r, inversion_count)
 
   return inversion_count
+
+if __name__ == '__main__':
+  merge_sort()

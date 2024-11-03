@@ -42,3 +42,7 @@ def multiply_polynomials(A, B, n):
      result.pop()
 
   return result
+
+
+if __name__ == '__main__':
+  multiply_polynomials()

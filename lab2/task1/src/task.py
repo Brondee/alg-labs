@@ -37,3 +37,6 @@ def merge_sort(A,p,r):
       merge_sort(A, q+1, r)
       merge(A,p,q,r)
   return A
+
+if __name__ == '__main__':
+  merge_sort()

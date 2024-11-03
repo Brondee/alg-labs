@@ -18,3 +18,6 @@ def randomized_quicksort(A,l,r):
     randomized_quicksort(A, l, m-1)
     randomized_quicksort(A, m+1, r)
   return A
+
+if __name__ == '__main__':
+  randomized_quicksort()
