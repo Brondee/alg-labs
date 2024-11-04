@@ -14,7 +14,7 @@ def count_interval(data):
     coordinates.append([point, "P"])
     result[point] = 0
 
-  coordinates.sort(key=lambda x: (x[0], x[1]))
+  coordinates.sort()
 
   active = 0
   for pos, coord_type in coordinates:
