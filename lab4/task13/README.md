@@ -44,5 +44,5 @@
 Для запуска тестов выполните:
 
 ```bash
-    PYTHONPATH=. python3 task13/tests/test.py
+PYTHONPATH=. python3 task13/tests/test.py
 ```

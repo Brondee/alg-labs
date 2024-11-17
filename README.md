@@ -40,13 +40,13 @@
 3. **Запуску всех лабораторных**
 
    ```bash
-    PYTHONPATH=. python3 task(номер задания)/src/task.py
+   PYTHONPATH=. python3 task(номер задания)/src/task.py
 
    ```
 
 4. **Запуску всех тестов**
 
    ```bash
-    PYTHONPATH=. python3 task(номер задания)/tests/test.py
+   PYTHONPATH=. python3 task(номер задания)/tests/test.py
 
    ```
