@@ -1,3 +1,5 @@
+import utils
+
 def count_interval(data):
   s, p = data[0][0], data[0][1]
   intervals = [x for x in data[1:1+s]]
@@ -28,4 +30,5 @@ def count_interval(data):
   return [result[point] for point in points]
 
 if __name__ == '__main__':
-  count_interval()
+  data = utils.read_data('task4/textf/input.txt')
+  count_interval(data)

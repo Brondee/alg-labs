@@ -1,3 +1,5 @@
+import utils
+
 def hirsh_index(arr):
     arr.sort(reverse=True) 
     h = 0
@@ -9,4 +11,5 @@ def hirsh_index(arr):
     return h
 
 if __name__ == '__main__':
-  hirsh_index()
+  data = utils.read_data('task5/textf/input.txt')
+  hirsh_index(data[0])

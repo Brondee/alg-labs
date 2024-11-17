@@ -1,4 +1,5 @@
 import random
+import utils
 
 def partition3(A, l, r):
     x = A[l]
@@ -29,4 +30,5 @@ def randomized_quicksort(A, l, r):
     return A
 
 if __name__ == '__main__':
-  randomized_quicksort()
+    data = utils.read_data('task1/textf/input.txt')
+    randomized_quicksort(data[1], 0, data[0]-1)

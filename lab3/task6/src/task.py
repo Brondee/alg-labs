@@ -1,4 +1,5 @@
 from task1.src.task2 import randomized_quicksort 
+import utils
 
 def sum_of_tenth(A, B):
     C = []
@@ -11,4 +12,5 @@ def sum_of_tenth(A, B):
     return sum_of_tenth
 
 if __name__ == '__main__':
-  sum_of_tenth()
+    data = utils.read_data('task6/textf/input.txt')
+    sum_of_tenth(data[1], data[2])
