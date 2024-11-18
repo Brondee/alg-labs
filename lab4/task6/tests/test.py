@@ -23,9 +23,9 @@ class AlgorithmsSortTestCase(unittest.TestCase):
         tracemalloc.stop()
 
         # then
-        self.assertEqual(res, ['1\n', '1\n', '10\n'])  # проверка результата работы алгоритма
-        self.assertLess(time.perf_counter() - t_start, 2)  # проверка времени выполнения
-        self.assertLess(tracemalloc.get_traced_memory()[1] / (1024 ** 2), 256)  # проверка количества используемой памяти
+        self.assertEqual(res, ['1\n', '1\n', '10\n'])
+        self.assertLess(time.perf_counter() - t_start, 2)
+        self.assertLess(tracemalloc.get_traced_memory()[1] / (1024 ** 2), 256)
 
 if __name__ == '__main__':
   unittest.main()
