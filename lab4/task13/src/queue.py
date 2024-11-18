@@ -46,6 +46,7 @@ class Queue:
         return self.size
 
 if __name__ == "__main__":
+    print("task 13.2")
     queue = Queue(5)
     queue.enqueue(10)
     print(queue.queue_size())

@@ -1,5 +1,5 @@
 import unittest
-from task13.src.queue import Queue 
+from lab4.task13.src.queue import Queue 
 
 class AlgorithmsSortTestCase(unittest.TestCase):
     

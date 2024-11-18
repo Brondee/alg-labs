@@ -1,14 +1,14 @@
 import time
 import tracemalloc
 import unittest
-from task12.src.task import recruits_line 
+from lab4.task12.src.task import recruits_line 
 import utils
 
 class AlgorithmsSortTestCase(unittest.TestCase):
 
     def test_should_check_success_of_recruits_line(self):
         # given
-        data = utils.read_data('task12/textf/input.txt')
+        data = utils.read_data('lab4/task12/textf/input.txt')
 
         # when
         tracemalloc.start()
@@ -16,7 +16,7 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = recruits_line(data[0][0], data[1:])
 
-        utils.write_file("task12/textf/output.txt", res)
+        utils.write_file("lab4/task12/textf/output.txt", res)
 
         print('Тест примера')
         utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))

@@ -32,6 +32,7 @@ class Stack:
         print("None")
 
 if __name__ == "__main__":
+    print("task 13.1")
     stack = Stack()
     print("Стек пуст:", stack.isEmpty())
     stack.push(10)

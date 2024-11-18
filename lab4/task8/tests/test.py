@@ -1,14 +1,14 @@
 import time
 import tracemalloc
 import unittest
-from task8.src.task import postfix 
+from lab4.task8.src.task import postfix 
 import utils
 
 class AlgorithmsSortTestCase(unittest.TestCase):
 
     def test_should_check_success_of_postfix(self):
         # given
-        data = utils.read_data('task8/textf/input.txt')
+        data = utils.read_data('lab4/task8/textf/input.txt')
 
         # when
         tracemalloc.start()
@@ -16,7 +16,7 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = postfix(data[1])
 
-        utils.write_file("task8/textf/output.txt", res)
+        utils.write_file("lab4/task8/textf/output.txt", res)
 
         print('Тест примера')
         utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
