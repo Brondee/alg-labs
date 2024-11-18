@@ -3,30 +3,35 @@ from lab4.task13.src.queue import Queue
 
 class AlgorithmsSortTestCase(unittest.TestCase):
     
-    def test_should_check_success_of_queue(self):
-      queue = Queue(5)
-      self.assertEqual(queue.isEmpty(), True)
-      self.assertEqual(queue.peek(), None)
-      self.assertEqual(queue.queue_size(), 0)
+    def setUp(self):
+      self.queue = Queue(5)
+    
+    def test_should_check_success_of_queue_empty(self):
+      self.assertEqual(self.queue.isEmpty(), True)
+      self.assertEqual(self.queue.peek(), None)
+      self.assertEqual(self.queue.queue_size(), 0)
 
-      queue.enqueue(10)
-      self.assertEqual(queue.isEmpty(), False)
-      self.assertEqual(queue.peek(), 10)
-      self.assertEqual(queue.queue_size(), 1)
+    def test_should_check_success_of_queue_enqueue(self):
+      self.queue.enqueue(10)
+      self.assertEqual(self.queue.isEmpty(), False)
+      self.assertEqual(self.queue.peek(), 10)
+      self.assertEqual(self.queue.queue_size(), 1)
 
-      queue.dequeue()
-      self.assertEqual(queue.isEmpty(), True)
-      self.assertEqual(queue.peek(), None)
-      self.assertEqual(queue.queue_size(), 0)
-      self.assertEqual(queue.dequeue(), 'Очередь пуста')
+    def test_should_check_success_of_queue_dequeue(self):
+      self.queue.dequeue()
+      self.assertEqual(self.queue.isEmpty(), True)
+      self.assertEqual(self.queue.peek(), None)
+      self.assertEqual(self.queue.queue_size(), 0)
+      self.assertEqual(self.queue.dequeue(), 'Очередь пуста')
 
-      queue.enqueue(10)
-      queue.enqueue(20)
-      queue.enqueue(30)
-      queue.enqueue(40)
-      queue.enqueue(50)
-      self.assertEqual(queue.isFull(), True)
-      self.assertEqual(queue.enqueue(60), 'Очередь переполнена')
+    def test_should_check_success_of_queue_full(self):
+      self.queue.enqueue(20)
+      self.queue.enqueue(10)
+      self.queue.enqueue(30)
+      self.queue.enqueue(40)
+      self.queue.enqueue(50)
+      self.assertEqual(self.queue.isFull(), True)
+      self.assertEqual(self.queue.enqueue(60), 'Очередь переполнена')
 
 
 if __name__ == '__main__':

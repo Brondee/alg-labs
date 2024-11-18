@@ -55,3 +55,4 @@ if __name__ == "__main__":
     queue.dequeue()
     print(queue.queue_size())
     print(queue.peek())
+    print('\n')

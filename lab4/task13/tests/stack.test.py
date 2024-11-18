@@ -2,16 +2,19 @@ import unittest
 from lab4.task13.src.stack import Stack 
 
 class AlgorithmsSortTestCase(unittest.TestCase):
-    
-    def test_should_check_success_of_stack(self):
-      stack = Stack()
-      self.assertEqual(stack.isEmpty(), True)
-      self.assertEqual(stack.display(), None)
 
-      stack.push(10)
-      self.assertEqual(stack.isEmpty(), False)
-      self.assertEqual(stack.pop(), 10)
-      self.assertEqual(stack.isEmpty(), True)
+    def setUp(self):
+      self.stack = Stack()
+    
+    def test_should_check_success_of_stack_empty(self):
+      self.assertEqual(self.stack.isEmpty(), True)
+      self.assertEqual(self.stack.display(), None)
+
+    def test_should_check_success_of_stack_push_pop(self):
+      self.stack.push(10)
+      self.assertEqual(self.stack.isEmpty(), False)
+      self.assertEqual(self.stack.pop(), 10)
+      self.assertEqual(self.stack.isEmpty(), True)
 
 
 if __name__ == '__main__':

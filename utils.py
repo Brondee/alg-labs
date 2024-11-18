@@ -38,4 +38,4 @@ def print_end_test(time, amount_data):
 def print_task_data(tasknum, inp, output):
     print(f"task {tasknum}")
     print("input: " + str(inp))
-    print("output: " + str(output))
+    print("output: " + str(output) + "\n")

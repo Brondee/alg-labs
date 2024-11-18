@@ -40,3 +40,5 @@ if __name__ == "__main__":
     print("Извлечён элемент:", stack.pop())
     stack.display()
     print("Стек пуст:", stack.isEmpty())
+    print('\n')
+
