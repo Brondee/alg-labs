@@ -26,19 +26,19 @@
    ```
 2. Перейдите в папку с проектом:
    ```bash
-   cd alg-labs/lab1
+   cd alg-labs
    ```
-3. **Запуску всех лабораторных**
+3. **Запуску всех задач**
 
    ```bash
-    PYTHONPATH=. python3 task(номер задания)/src/task.py
+   for script in lab4/*/src/*.py; do PYTHONPATH=$(pwd) python3 "$script"; done
 
    ```
 
-4. **Запуску всех тестов**
+4. **Запуску всех тестов задач**
 
    ```bash
-    PYTHONPATH=. python3 task(номер задания)/tests/test.py
+   for script in lab4/*/tests/*.py; do PYTHONPATH=$(pwd) python3 "$script"; done
 
    ```
 
@@ -47,6 +47,6 @@
 Для запуска тестов выполните:
 
 ```bash
-  PYTHONPATH=. python3 task(номер задания)/tests/test.py
+for script in lab4/*/tests/*.py; do PYTHONPATH=$(pwd) python3 "$script"; done
 
 ```

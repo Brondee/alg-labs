@@ -37,18 +37,18 @@ N » означает добавление в очередь числа N , по
    ```
 2. Перейдите в папку с проектом:
    ```bash
-   cd alg-labs/lab1
+   cd alg-labs
    ```
 3. Запустите программу:
 
    ```bash
-   PYTHONPATH=. python3 task2/src/task.py
+   PYTHONPATH=. python3 lab4/task2/src/task.py
    ```
 
 4. Запуск тестов:
 
    ```bash
-   PYTHONPATH=. python3 task2/tests/test.py
+   PYTHONPATH=. python3 lab4/task2/tests/test.py
 
    ```
 

@@ -42,18 +42,18 @@
    ```
 2. Перейдите в папку с проектом:
    ```bash
-   cd alg-labs/lab1
+   cd alg-labs
    ```
 3. Запустите программу:
 
    ```bash
-   PYTHONPATH=. python3 task6/src/task.py
+   PYTHONPATH=. python3 lab4/task6/src/task.py
    ```
 
 4. Запуск тестов:
 
    ```bash
-   PYTHONPATH=. python3 task6/tests/test.py
+   PYTHONPATH=. python3 lab4/task6/tests/test.py
 
    ```
 
@@ -62,5 +62,5 @@
 Для запуска тестов выполните:
 
 ```bash
-    PYTHONPATH=. python3 task6/tests/test.py
+PYTHONPATH=. python3 lab4/task6/tests/test.py
 ```
