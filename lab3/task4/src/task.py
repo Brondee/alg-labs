@@ -30,5 +30,7 @@ def count_interval(data):
   return [result[point] for point in points]
 
 if __name__ == '__main__':
-  data = utils.read_data('task4/textf/input.txt')
-  count_interval(data)
+  data = utils.read_data('lab3/task4/textf/input.txt')
+  res = count_interval(data)
+  utils.print_task_data(4, data, res)
+

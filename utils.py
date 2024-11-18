@@ -34,3 +34,8 @@ def read_data(file_path: str):
 def print_end_test(time, amount_data):
   print('Время работы: %s секунд' % time)
   print("Память:", amount_data, "МБ")
+
+def print_task_data(tasknum, inp, output):
+    print(f"task {tasknum}")
+    print("input: " + str(inp))
+    print("output: " + str(output))

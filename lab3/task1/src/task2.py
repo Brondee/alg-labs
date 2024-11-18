@@ -30,5 +30,6 @@ def randomized_quicksort(A, l, r):
     return A
 
 if __name__ == '__main__':
-    data = utils.read_data('task1/textf/input.txt')
-    randomized_quicksort(data[1], 0, data[0]-1)
+    data = utils.read_data('lab3/task1/textf/input.txt')
+    res = randomized_quicksort(data[1], 0, data[0]-1)
+    utils.print_task_data(1, data, res)

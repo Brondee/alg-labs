@@ -1,4 +1,4 @@
-from task1.src.task2 import randomized_quicksort 
+from lab3.task1.src.task2 import randomized_quicksort 
 import utils
 
 
@@ -11,5 +11,6 @@ def k_closest_points(arr, k):
   return [x[1] for x in points_sort[0:k]]
 
 if __name__ == '__main__':
-  data = utils.read_data('task8/textf/input.txt')
-  k_closest_points(data[1:], data[0][1])
+  data = utils.read_data('lab3/task8/textf/input.txt')
+  res = k_closest_points(data[1:], data[0][1])
+  utils.print_task_data(8, data, res)

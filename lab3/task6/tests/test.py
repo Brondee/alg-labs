@@ -1,22 +1,31 @@
 import time
 import tracemalloc
-from task6.src.task import sum_of_tenth 
+import unittest
+from lab3.task6.src.task import sum_of_tenth 
 import utils
 
-def example_test():
-  # проверка по времени и памяти для примера
-  tracemalloc.start()
-  t_start = time.perf_counter()
+class AlgorithmsSortTestCase(unittest.TestCase):
 
-  data = utils.read_data('task6/textf/input.txt')
+    def test_should_check_success_of_sum_of_tenth(self):
+        # given
+        data = utils.read_data('lab3/task6/textf/input.txt')
 
-  res = sum_of_tenth(data[1], data[2])
+        # when
+        tracemalloc.start()
+        t_start = time.perf_counter()
 
-  utils.write_file("task6/textf/output.txt", [res])
+        res = sum_of_tenth(data[1], data[2])
 
-  print('Тест примера')
-  utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
-  tracemalloc.stop()
+        utils.write_file("lab3/task6/textf/output.txt", res)
+
+        print('Тест примера')
+        utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
+        tracemalloc.stop()
+
+        # then
+        self.assertEqual(res, 51) 
+        self.assertLess(time.perf_counter() - t_start, 5) 
+        self.assertLess(tracemalloc.get_traced_memory()[1] / (1024 ** 2), 256) 
 
 if __name__ == '__main__':
-  example_test()
+  unittest.main()

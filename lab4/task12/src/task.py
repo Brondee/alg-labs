@@ -52,9 +52,7 @@ def recruits_line(n, commands):
     return results
 
 if __name__ == '__main__':
-  print("task 12")
   data = utils.read_data('lab4/task12/textf/input.txt')
-  print(data)
   res = recruits_line(data[0][0], data[1:])
-  print(res)
+  utils.print_task_data(12, data, res)
   utils.write_file("lab4/task12/textf/output.txt", res)

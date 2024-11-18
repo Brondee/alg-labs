@@ -14,10 +14,8 @@ def queue_func_min(commands):
   return res
   
 if __name__ == '__main__':
-  print("task 6")
   data = utils.read_data('lab4/task6/textf/input.txt')
-  print(data)
   res = queue_func_min(data[1:])
-  print(res)
+  utils.print_task_data(6, data, res)
   utils.write_file("lab4/task6/textf/output.txt", res)
   

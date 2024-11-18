@@ -19,9 +19,7 @@ def postfix(expression):
     return stack.pop()
 
 if __name__ == '__main__':
-  print("task 8")
   data = utils.read_data('lab4/task8/textf/input.txt')
-  print(data)
   res = postfix(data[1])
-  print(res)
+  utils.print_task_data(8, data, res)
   utils.write_file("lab4/task8/textf/output.txt", res)
