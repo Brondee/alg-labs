@@ -3,7 +3,7 @@ import tracemalloc
 tracemalloc.start()
 t_start = time.perf_counter()
 
-f = open('task10/textf/input.txt')
+f = open('lab1/task10/textf/input.txt')
 n = int(f.readline())
 chars = f.readline()
 
@@ -23,7 +23,7 @@ for key, value in chars_count_sort:
   elif value % 2 == 0:
     res = key * (value // 2) + res + key * (value // 2)
   
-f2 = open("task10/textf/output.txt", 'w')
+f2 = open("lab1/task10/textf/output.txt", 'w')
 f2.write(res)
 f2.close()
 

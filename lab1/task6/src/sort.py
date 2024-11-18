@@ -3,7 +3,7 @@ import tracemalloc
 tracemalloc.start()
 t_start = time.perf_counter()
 
-f = open('task6/textf/input.txt')
+f = open('lab1/task6/textf/input.txt')
 n = int(f.readline())
 arr = list(map(int, f.readline().split()))
 
@@ -12,7 +12,7 @@ for i in range(n):
     if arr[j] > arr[j+1]:
       arr[j], arr[j+1] = arr[j+1], arr[j]
 
-f2 = open("task6/textf/output.txt", 'w')
+f2 = open("lab1/task6/textf/output.txt", 'w')
 f2.write((" ").join(list(map(str, arr))))
 f2.close()
 
