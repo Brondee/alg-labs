@@ -1,7 +1,7 @@
 import time
 import tracemalloc
 import random
-from task7.src.task import max_subarray 
+from lab2.task7.src.task import max_subarray 
 import utils
 
 def example_test():
@@ -9,14 +9,14 @@ def example_test():
   tracemalloc.start()
   t_start = time.perf_counter()
 
-  data = utils.read_data('task7/textf/input.txt')
+  data = utils.read_data('lab2/task7/textf/input.txt')
 
   res = max_subarray(data[1])
 
-  utils.write_file("task7/textf/output.txt", [res])
+  utils.write_file("lab2/task7/textf/output.txt", [res])
 
   print('Тест примера')
-  utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
+  utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
   tracemalloc.stop()
 
 def cases_test():
@@ -33,7 +33,7 @@ def cases_test():
 
     res = max_subarray(arr)
     print(arr_names[i])
-    utils.end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
+    utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
 
     tracemalloc.stop()
 

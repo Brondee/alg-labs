@@ -1,3 +1,5 @@
+import utils
+
 def max_subarray(arr):
   max_sum = arr[0]
   current_sum = arr[0]
@@ -19,4 +21,6 @@ def max_subarray(arr):
   return arr[st:end + 1]
 
 if __name__ == '__main__':
-  max_subarray()
+  data = utils.read_data('lab2/task7/textf/input.txt')
+  res = max_subarray(data[1])
+  utils.print_task_data(7, data, res)

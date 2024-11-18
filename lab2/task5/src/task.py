@@ -1,3 +1,5 @@
+import utils
+
 def count_majority(A, target, l, r):
   count = 0
   for i in range(l, r+1):
@@ -37,4 +39,6 @@ def has_majority(A, n):
   return 0
 
 if __name__ == '__main__':
-  has_majority()
+  data = utils.read_data('lab2/task5/textf/input.txt')
+  res = has_majority(data[1], data[0])
+  utils.print_task_data(5, data, res)

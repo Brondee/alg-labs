@@ -1,3 +1,5 @@
+import utils
+
 def add_polynomials(A, B):
   return [A[i] + B[i] for i in range(len(A))]
 
@@ -45,4 +47,6 @@ def multiply_polynomials(A, B, n):
 
 
 if __name__ == '__main__':
-  multiply_polynomials()
+  data = utils.read_data('lab2/task8/textf/input.txt')
+  res = multiply_polynomials(data[1], data[2], data[0])
+  utils.print_task_data(8, data, res)
