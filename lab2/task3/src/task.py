@@ -1,3 +1,5 @@
+import utils
+
 def merge(A, p, q, r, inversion_count):
   n1 = q - p + 1
   n2 = r - q
@@ -42,4 +44,6 @@ def merge_sort(A,p,r, inversion_count):
   return inversion_count
 
 if __name__ == '__main__':
-  merge_sort()
+  data = utils.read_data('lab2/task3/textf/input.txt')
+  res = merge_sort(data[1], 0, len(data[1]) - 1, 0)
+  utils.print_task_data(3, data, res)
