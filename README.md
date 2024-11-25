@@ -47,6 +47,6 @@
 4. **Запуску всех тестов**
 
    ```bash
-   for script in lab*/*/tests/*.py; do PYTHONPATH=$(pwd) python3 "$script"; done
+   python3 -m pytest -v lab*/task*/tests/*.py
 
    ```

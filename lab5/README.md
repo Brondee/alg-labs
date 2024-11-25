@@ -46,6 +46,6 @@
 Для запуска тестов выполните:
 
 ```bash
-for script in lab5/*/tests/*.py; do PYTHONPATH=$(pwd) python3 "$script"; done
+python3 -m pytest -v lab5/task*/tests/*.py
 
 ```
