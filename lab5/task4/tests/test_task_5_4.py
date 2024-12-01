@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = build_pyramid(data[0], data[1])
 
-        utils.write_file("lab5/task4/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then

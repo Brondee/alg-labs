@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = is_heap(data[0], data[1])
 
-        utils.write_file("lab5/task1/textf/output.txt", [res])
-
         tracemalloc.stop()
 
         # then

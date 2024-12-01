@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = network_packets(data[0][0], data[1:])
 
-        utils.write_file("lab5/task3/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then

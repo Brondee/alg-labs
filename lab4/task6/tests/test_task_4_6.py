@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = queue_func_min(data[1:])
 
-        utils.write_file("lab4/task6/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then

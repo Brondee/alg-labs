@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = postfix(data[1])
 
-        utils.write_file("lab4/task8/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then

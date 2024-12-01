@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = check_brackets(data[0])
 
-        utils.write_file("lab4/task4/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then

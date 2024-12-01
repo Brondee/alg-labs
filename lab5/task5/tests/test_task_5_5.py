@@ -16,8 +16,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         res = task_manager(data[0][0], data[0][1], data[1])
 
-        utils.write_file("lab5/task5/textf/output.txt", res)
-
         tracemalloc.stop()
 
         # then
