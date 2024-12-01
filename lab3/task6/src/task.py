@@ -14,4 +14,4 @@ def sum_of_tenth(A, B):
 if __name__ == '__main__':
     data = utils.read_data('lab3/task6/textf/input.txt')
     res = sum_of_tenth(data[1], data[2])
-    utils.print_task_data(6, data, res)
+    utils.print_task_data(3, 6, data, res)

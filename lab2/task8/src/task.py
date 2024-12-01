@@ -49,4 +49,4 @@ def multiply_polynomials(A, B, n):
 if __name__ == '__main__':
   data = utils.read_data('lab2/task8/textf/input.txt')
   res = multiply_polynomials(data[1], data[2], data[0])
-  utils.print_task_data(8, data, res)
+  utils.print_task_data(2, 8, data, res)

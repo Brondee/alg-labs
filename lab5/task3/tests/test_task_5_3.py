@@ -18,8 +18,6 @@ class AlgorithmsSortTestCase(unittest.TestCase):
 
         utils.write_file("lab5/task3/textf/output.txt", res)
 
-        print('Тест примера')
-        utils.print_end_test(time.perf_counter() - t_start, tracemalloc.get_traced_memory()[1] / (1024 ** 2))
         tracemalloc.stop()
 
         # then

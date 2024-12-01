@@ -32,5 +32,5 @@ def count_interval(data):
 if __name__ == '__main__':
   data = utils.read_data('lab3/task4/textf/input.txt')
   res = count_interval(data)
-  utils.print_task_data(4, data, res)
+  utils.print_task_data(3, 4, data, res)
 

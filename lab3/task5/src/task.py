@@ -13,4 +13,4 @@ def hirsh_index(arr):
 if __name__ == '__main__':
   data = utils.read_data('lab3/task5/textf/input.txt')
   res = hirsh_index(data[0])
-  utils.print_task_data(5, data, res)
+  utils.print_task_data(3, 5, data, res)

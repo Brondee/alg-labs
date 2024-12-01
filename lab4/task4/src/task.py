@@ -19,5 +19,5 @@ def check_brackets(data):
 if __name__ == '__main__':
   data = utils.read_data('lab4/task4/textf/input.txt')
   res = check_brackets(data[0])
-  utils.print_task_data(4, data, res)
+  utils.print_task_data(4, 4, data, res)
   utils.write_file("lab4/task4/textf/output.txt", res)

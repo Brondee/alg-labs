@@ -46,4 +46,4 @@ def merge_sort(A,p,r, inversion_count):
 if __name__ == '__main__':
   data = utils.read_data('lab2/task3/textf/input.txt')
   res = merge_sort(data[1], 0, len(data[1]) - 1, 0)
-  utils.print_task_data(3, data, res)
+  utils.print_task_data(2, 3, data, res)

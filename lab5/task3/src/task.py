@@ -26,5 +26,5 @@ def network_packets(buffer_size, packets):
 if __name__ == '__main__':
   data = utils.read_data('lab5/task3/textf/input.txt')
   res = network_packets(data[0][0], data[1:])
-  utils.print_task_data(3, data, res)
+  utils.print_task_data(5, 3, data, res)
   utils.write_file("lab5/task3/textf/output.txt", res)

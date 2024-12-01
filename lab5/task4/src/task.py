@@ -28,6 +28,6 @@ def build_pyramid(n, data):
 if __name__ == '__main__':
   data = utils.read_data('lab5/task4/textf/input.txt')
   res = build_pyramid(data[0], data[1])
-  utils.print_task_data(4, data, res)
+  utils.print_task_data(5, 4, data, res)
   utils.write_file("lab5/task4/textf/output.txt", res)
 

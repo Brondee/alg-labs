@@ -53,5 +53,5 @@ def task_manager(n, m, tasks):
 if __name__ == '__main__':
   data = utils.read_data('lab5/task5/textf/input.txt')
   res = task_manager(data[0][0], data[0][1], data[1])
-  utils.print_task_data(5, data, res)
+  utils.print_task_data(5, 5, data, res)
   utils.write_file("lab5/task5/textf/output.txt", res)

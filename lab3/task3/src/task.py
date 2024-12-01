@@ -13,4 +13,4 @@ def pugalo_sort(A, n, k):
 if __name__ == '__main__':
   data = utils.read_data('lab3/task3/textf/input.txt')
   res = pugalo_sort(data[1], data[0][0], data[0][1])
-  utils.print_task_data(3, data, res)
+  utils.print_task_data(3, 3, data, res)

@@ -23,4 +23,4 @@ def find_ind(A, B, n):
 if __name__ == '__main__':
   data = utils.read_data('lab2/task4/textf/input.txt')
   res = find_ind(data[1], data[3], data[0])
-  utils.print_task_data(4, data, res)
+  utils.print_task_data(2, 4, data, res)

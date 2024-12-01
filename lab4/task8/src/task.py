@@ -21,5 +21,5 @@ def postfix(expression):
 if __name__ == '__main__':
   data = utils.read_data('lab4/task8/textf/input.txt')
   res = postfix(data[1])
-  utils.print_task_data(8, data, res)
+  utils.print_task_data(4, 8, data, res)
   utils.write_file("lab4/task8/textf/output.txt", res)

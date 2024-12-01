@@ -35,7 +35,7 @@ def print_end_test(time, amount_data):
   print('Время работы: %s секунд' % time)
   print("Память:", amount_data, "МБ")
 
-def print_task_data(tasknum, inp, output):
-    print(f"task {tasknum}")
+def print_task_data(labnum, tasknum, inp, output):
+    print(f"lab {labnum} task {tasknum}")
     print("input: " + str(inp))
     print("output: " + str(output) + "\n")

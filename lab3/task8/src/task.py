@@ -13,4 +13,4 @@ def k_closest_points(arr, k):
 if __name__ == '__main__':
   data = utils.read_data('lab3/task8/textf/input.txt')
   res = k_closest_points(data[1:], data[0][1])
-  utils.print_task_data(8, data, res)
+  utils.print_task_data(3, 8, data, res)

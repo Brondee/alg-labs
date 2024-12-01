@@ -23,4 +23,4 @@ def max_subarray(arr):
 if __name__ == '__main__':
   data = utils.read_data('lab2/task7/textf/input.txt')
   res = max_subarray(data[1])
-  utils.print_task_data(7, data, res)
+  utils.print_task_data(2, 7, data, res)

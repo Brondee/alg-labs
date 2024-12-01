@@ -41,4 +41,4 @@ def has_majority(A, n):
 if __name__ == '__main__':
   data = utils.read_data('lab2/task5/textf/input.txt')
   res = has_majority(data[1], data[0])
-  utils.print_task_data(5, data, res)
+  utils.print_task_data(2, 5, data, res)

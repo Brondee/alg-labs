@@ -16,6 +16,6 @@ def queue_func(commands):
 if __name__ == '__main__':
   data = utils.read_data('lab4/task2/textf/input.txt')
   res = queue_func(data[1:])
-  utils.print_task_data(2, data, res)
+  utils.print_task_data(4, 2, data, res)
   utils.write_file("lab4/task2/textf/output.txt", res)
   
